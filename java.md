@@ -24,6 +24,11 @@ if (avg <= 25) {
 2. or - ||
 3. not - !
 ```
+<br> <br> <br>
+
+
+
+
 
 
 
@@ -31,3 +36,20 @@ if (avg <= 25) {
 
 
 # 29.10.2025 - if/else
+
+``` java
+static void charType()
+{
+  char letters;
+  System.out.println("Please enter a letter: ");
+  letter = Input.next().charAt(0);
+
+  if ((letter >= 'a' && letter <= 'z' ) ||
+    (letter >= 'A' && letter <= 'Z' ))
+    System.out.println ("A letter");
+  else if (letter >= '0' && letter <= '9' )
+    System.out.println ("Digit");
+  else //any symbol
+    System.out.println ("Neither letter not a dight");
+```
+
