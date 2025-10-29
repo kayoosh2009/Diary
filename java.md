@@ -24,7 +24,7 @@ if (avg <= 25) {
 2. or - ||
 3. not - !
 ```
-<br> <br> <br>
+<br> <br> <br> <br> <br>
 
 
 
