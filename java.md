@@ -1,3 +1,28 @@
+# 04.11.2025 - Символы и String
+Компьютер всегда когда получает данные то они зашифровываются как strung <br>
+Так же не стоит забывать что для вызова текста нужно использовать ***scan.nextLine()*** или ***scan.next()*** <br> <br>
+
+***next.Line*** используется для сканирования всей строки а вот <br>
+***next()*** для сканирования всего одного слово и он больше не записывает все что было после пробела <br>
+
+Так же есть char который сам по себе является одним символом и его мы сохраняем ввиде 'a' в отличии от string где используется для сохранения  "a" <br>
+Так же не многие знаю что для получения такого символа нужно использовать ***scan.next(). charAt(0)***.<br> <br>
+
+
+Для того чтобы сравнивать string с string, нужно использовать ***equals***
+
+<br> <br> <br> <br> <br>
+
+
+
+
+
+
+
+
+
+
+
 # 04.11.2025 - if, else & switch
 Что такое Switch? <br>
 Это помощь для упрощения кода если есть много if и else 
@@ -35,6 +60,46 @@ public class TemperatureCheckSwitch {
 4. break; - пишется у каждого кейса для выхода
 ```
 Так же главное запомнить что нельзя использовать break и continue где угодно но только в switch
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter month");
+        String num_m = scan.nextLine();
+
+        switch (num_m) {
+            case "January":
+            case "March":
+            case "May":
+            case "July":
+            case "August":
+            case "October":
+            case "December":
+                System.out.println(31 + " Days");
+                break;
+
+
+            case "April":
+            case "June":
+            case "September":
+            case "November":
+                System.out.println(30 + " Days");
+                break;
+
+            case "February":
+                System.out.println(28+"or"+29 + " Days");
+                break;
+
+            default:
+                System.out.println("Invalid input");
+                break;
+        }
+    }
+}
+```
 <br> <br> <br> <br> <br>
 
 
